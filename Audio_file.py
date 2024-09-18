@@ -1,5 +1,5 @@
 from pathlib import Path
-
+#ㅁㄴㅇㄹ
 class AudioFile:
     ext:str
     
