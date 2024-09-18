@@ -36,4 +36,16 @@ def handler() -> None:
     except Exception as ex:
         print(f"I caught an exception:{ex!r}")
     print("Executed after the exception")
-handler()
+
+
+from typing import Union
+
+def funny_division(divisor:float)->Union[str,float]:
+    try:
+        return 100/ divisor
+    
+    except ZeroDivisionError:
+        return "Zero is not a good idea!"
+    
+    
+print(funny_division(0))
